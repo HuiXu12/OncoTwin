@@ -4,11 +4,11 @@ OncoTwin is a generalizable multimodal digital-twin framework to model individua
 ![Pipeline overview](figures/pipeline.png)
 
 ## Key Features
-1.	Digital twin bridging real-world and trial data: OncoTwin integrates real-world data from MD Anderson with two prospective trial cohorts (Phase III ALTA-1L and Phase II BrightStar) to enable robust risk stratification, calibrated individualized survival prediction, and virtual control-arm simulation in clinical trials.
-2.	Multimodal, longitudinal modeling with clinically accessible inputs: OncoTwin lev-erages whole-body 3D tumor burden, routine blood tests, and clinical demographics across baseline, early on-treatment, and delta timepoints, yielding interpretable and readi-ly translatable clinical insights.
-3.	Trial-integrated clinical applications: Within the Phase II BrightStar trial, OncoTwin simulated a brigatinib-only control arm to estimate the treatment effect of LCT, and used simulation-based resampling to determine stable sample size thresholds. Individualized treatment-effect estimates further highlight its potential for adaptive and evidence-guided trial design.
-4.	Biological and therapeutic insight: Beyond aggregate endpoints, OncoTwin revealed early-response heterogeneity between TKI generations, with second-generation TKIs achieving superior whole-body and organ-specific responses, and enabled TKI-specific risk stratification to support more granular treatment strategies.
-5.	Spatially resolved disease modeling:  By capturing inter-patient differences, OncoT-win quantified not only whole-body but also organ-specific tumor burden dynamics, providing a foundation for organ adaptive therapeutic strategies and a deeper under-standing of site-specific resistance.
+**1.	Digital twin bridging real-world and trial data:** OncoTwin integrates real-world data from MD Anderson with two prospective trial cohorts (Phase III ALTA-1L and Phase II BrightStar) to enable robust risk stratification, calibrated individualized survival prediction, and virtual control-arm simulation in clinical trials.  
+**2.	Multimodal, longitudinal modeling with clinically accessible inputs:** OncoTwin lev-erages whole-body 3D tumor burden, routine blood tests, and clinical demographics across baseline, early on-treatment, and delta timepoints, yielding interpretable and readi-ly translatable clinical insights.  
+**3.	Trial-integrated clinical applications:** Within the Phase II BrightStar trial, OncoTwin simulated a brigatinib-only control arm to estimate the treatment effect of LCT, and used simulation-based resampling to determine stable sample size thresholds. Individualized treatment-effect estimates further highlight its potential for adaptive and evidence-guided trial design.  
+**4.	Biological and therapeutic insight:** Beyond aggregate endpoints, OncoTwin revealed early-response heterogeneity between TKI generations, with second-generation TKIs achieving superior whole-body and organ-specific responses, and enabled TKI-specific risk stratification to support more granular treatment strategies.  
+**5.	Spatially resolved disease modeling:**  By capturing inter-patient differences, OncoT-win quantified not only whole-body but also organ-specific tumor burden dynamics, providing a foundation for organ adaptive therapeutic strategies and a deeper under-standing of site-specific resistance.
 
 ## Installation
 To install the development version of OncoTwin using pip, run the following command:
@@ -18,10 +18,56 @@ pip install git+https://github.com/WuLabMDA/OncoTwin.git
 
 ## The repository contains the following files:
 ### 1. Model Training
-- File: xxx.py
-- Description: Trains the machine learning models using repeated cross-validation, bootstrapping, feature selection, and survival analysis. Implements Grey Wolf Optimizer for feature reduction.
-- Inputs: ISABR_trial.csv, matched_id.csv, unmatched_id.csv
-- Outputs: Trained models and cross-validation results.
+**- File:** xxx.py
+**- Description:** Trains the machine learning models using repeated cross-validation, bootstrapping, feature selection, and survival analysis. Implements Grey Wolf Optimizer for feature reduction.
+**- Inputs:** ISABR_trial.csv, matched_id.csv, unmatched_id.csv
+**- Outputs:** Trained models and cross-validation results.
+
+### 2. Feature Selection
+**- File:** xxx.py
+**- Description:** Trains the machine learning models using repeated cross-validation, bootstrapping, feature selection, and survival analysis. Implements Grey Wolf Optimizer for feature reduction.
+**- Inputs:** ISABR_trial.csv, matched_id.csv, unmatched_id.csv
+**- Outputs:** Trained models and cross-validation results.
+
+### 3. Generate Predictions
+**- File:** xxx.py
+**- Description:** Trains the machine learning models using repeated cross-validation, bootstrapping, feature selection, and survival analysis. Implements Grey Wolf Optimizer for feature reduction.
+**- Inputs:** ISABR_trial.csv, matched_id.csv, unmatched_id.csv
+**- Outputs:** Trained models and cross-validation results.
+
+### 4. Refit Model for Subgroup Analysis
+**- File:** xxx.py
+**- Description:** Trains the machine learning models using repeated cross-validation, bootstrapping, feature selection, and survival analysis. Implements Grey Wolf Optimizer for feature reduction.
+**- Inputs:** ISABR_trial.csv, matched_id.csv, unmatched_id.csv
+**- Outputs:** Trained models and cross-validation results.
+
+### 5. Core Utilities
+**- File:** xxx.py
+**- Description:** Trains the machine learning models using repeated cross-validation, bootstrapping, feature selection, and survival analysis. Implements Grey Wolf Optimizer for feature reduction.
+**- Inputs:** ISABR_trial.csv, matched_id.csv, unmatched_id.csv
+**- Outputs:** Trained models and cross-validation results.
+
+## Reference: https://github.com/WuLabMDA/ISABR-SELECT [should delete at the end]
+
+## Citation
+If you use this framework, please cite our work:
+```bash
+@article{ISABRSelect,
+  title={Artificial Intelligence-Based Clinical and Radiomic Analysis to Optimize Patient Selection for Combined Immunotherapy and SABR in Early-Stage NSCLC – Secondary Analysis of the I-SABR Randomized Controlled Trial},
+  author={},
+  journal={},
+  year={Year},
+  volume={Volume},
+  pages={Pages},
+  doi={DOI}
+}
+```
+For questions, contributions, or issues, please contact us or create a new issue in this repository.
+
+
+
+
+
 
 
 
