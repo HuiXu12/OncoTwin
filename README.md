@@ -55,7 +55,7 @@ pip install git+https://github.com/WuLabMDA/OncoTwin.git
 - **Improved Outcomes**: Patients treated following model recommendations demonstrated superior event-free survival (EFS) compared to random treatment assignment.
 
 
-![OncoTwin](figures/jpg2.png)
+![OncoTwin Pipeline](Figures/results.png)
 
 ## Reference: https://github.com/WuLabMDA/ISABR-SELECT [should delete at the end]
 
