@@ -1,4 +1,4 @@
-# OncoTwin: Digital Twin Enabled Translation of Real-World Evidence into Prospective Clinical Trial Design: Insights from the Phase II BRIGHTSTAR Study in ALK-Rearranged NSCLC 
+# OncoTwin: Insights from the Phase II BRIGHTSTAR Study in ALK-Rearranged NSCLC 
 OncoTwin is a generalizable multimodal digital-twin framework to model individualized treatment trajectories by integrating imaging-derived tumor burden dynamics with routine blood test and demographic variables in ALK-rearranged NSCLC. Across systematic validation spanning real-world datasets and prospective clinical trials, OncoTwin accurately reproduced survival outcomes across TKI generations, simulated virtual control arm, and estimated patient-level treatment effects. Its successful deployment in the Phase II BRIGHTSTAR trial demonstrates the feasibility and translational potential of AI-enabled digital twins and establishes a blueprint for broader applications in oncology. 
 
 ![OncoTwin Pipeline](Figures/Fig.%201_pipeline.jpg)
