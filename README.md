@@ -1,7 +1,7 @@
 # OncoTwin
 OncoTwin is a generalizable multimodal digital-twin framework to model individualized treatment trajectories by integrating imaging-derived tumor burden dynamics with routine blood test and demographic variables in ALK-rearranged NSCLC. Across systematic validation spanning real-world datasets and prospective clinical trials, OncoTwin accurately reproduced survival outcomes across TKI generations, simulated virtual control arm, and estimated patient-level treatment effects. Its successful deployment in the Phase II BRIGHTSTAR trial demonstrates the feasibility and translational potential of AI-enabled digital twins and establishes a blueprint for broader applications in oncology. 
 
-![Pipeline overview](figures/pipeline.png)
+![OncoTwin](figures/pipeline.png)
 
 ## Key Features
 **1.	Digital twin bridging real-world and trial data:** OncoTwin integrates real-world data from MD Anderson with two prospective trial cohorts (Phase III ALTA-1L and Phase II BrightStar) to enable robust risk stratification, calibrated individualized survival prediction, and virtual control-arm simulation in clinical trials.  
@@ -17,35 +17,45 @@ pip install git+https://github.com/WuLabMDA/OncoTwin.git
 ```
 
 ## The repository contains the following files:
-### 1. Model Training
-**- File:** xxx.py
-**- Description:** Trains the machine learning models using repeated cross-validation, bootstrapping, feature selection, and survival analysis. Implements Grey Wolf Optimizer for feature reduction.
-**- Inputs:** ISABR_trial.csv, matched_id.csv, unmatched_id.csv
-**- Outputs:** Trained models and cross-validation results.
+### 1. **Tumor Burden Measurement**
+- **File**: `S1_tumor_burden_measurement.mat`  
+- **Description**: Extract 
+- Trains the machine learning models using repeated cross-validation, bootstrapping, feature selection, and survival analysis. Implements Grey Wolf Optimizer for feature reduction.  
+- **Inputs**: `ISABR_trial.csv`, `matched_id.csv`, `unmatched_id.csv`  
+- **Outputs**: Trained models and cross-validation results.
 
-### 2. Feature Selection
-**- File:** xxx.py
-**- Description:** Trains the machine learning models using repeated cross-validation, bootstrapping, feature selection, and survival analysis. Implements Grey Wolf Optimizer for feature reduction.
-**- Inputs:** ISABR_trial.csv, matched_id.csv, unmatched_id.csv
-**- Outputs:** Trained models and cross-validation results.
+### 2. **Model Training**
+- **File**: `S2_BarPlot.py`  
+- **Description**: Visualizes feature selection frequency across models. Generates bar plots and histograms to analyze selected features.  
+- **Inputs**: Model outputs and feature metadata (`Type.xlsx`).  
+- **Outputs**: Feature selection bar plots.
 
-### 3. Generate Predictions
-**- File:** xxx.py
-**- Description:** Trains the machine learning models using repeated cross-validation, bootstrapping, feature selection, and survival analysis. Implements Grey Wolf Optimizer for feature reduction.
-**- Inputs:** ISABR_trial.csv, matched_id.csv, unmatched_id.csv
-**- Outputs:** Trained models and cross-validation results.
+### 3. **Model Calibration and Prediction**
+- **File**: `S2_BarPlot.py`  
+- **Description**: Visualizes feature selection frequency across models. Generates bar plots and histograms to analyze selected features.  
+- **Inputs**: Model outputs and feature metadata (`Type.xlsx`).  
+- **Outputs**: Feature selection bar plots.
+- 
+### 4. **Risk Stratification and Individual Survival Curves Prediction**
+- **File**: `S2_BarPlot.py`  
+- **Description**: Visualizes feature selection frequency across models. Generates bar plots and histograms to analyze selected features.  
+- **Inputs**: Model outputs and feature metadata (`Type.xlsx`).  
+- **Outputs**: Feature selection bar plots.
 
-### 4. Refit Model for Subgroup Analysis
-**- File:** xxx.py
-**- Description:** Trains the machine learning models using repeated cross-validation, bootstrapping, feature selection, and survival analysis. Implements Grey Wolf Optimizer for feature reduction.
-**- Inputs:** ISABR_trial.csv, matched_id.csv, unmatched_id.csv
-**- Outputs:** Trained models and cross-validation results.
+### 5. **Individual Treatment Effect Estimation**
+- **File**: `S2_BarPlot.py`  
+- **Description**: Visualizes feature selection frequency across models. Generates bar plots and histograms to analyze selected features.  
+- **Inputs**: Model outputs and feature metadata (`Type.xlsx`).  
+- **Outputs**: Feature selection bar plots.
 
-### 5. Core Utilities
-**- File:** xxx.py
-**- Description:** Trains the machine learning models using repeated cross-validation, bootstrapping, feature selection, and survival analysis. Implements Grey Wolf Optimizer for feature reduction.
-**- Inputs:** ISABR_trial.csv, matched_id.csv, unmatched_id.csv
-**- Outputs:** Trained models and cross-validation results.
+
+
+## Results
+- **Treatment Recommendations**: I-SABR-SELECT identified a significant subgroup of patients benefiting from adding immunotherapy.
+- **Improved Outcomes**: Patients treated following model recommendations demonstrated superior event-free survival (EFS) compared to random treatment assignment.
+
+
+![OncoTwin](figures/jpg2.png)
 
 ## Reference: https://github.com/WuLabMDA/ISABR-SELECT [should delete at the end]
 
@@ -53,7 +63,7 @@ pip install git+https://github.com/WuLabMDA/OncoTwin.git
 If you use this framework, please cite our work:
 ```bash
 @article{ISABRSelect,
-  title={Artificial Intelligence-Based Clinical and Radiomic Analysis to Optimize Patient Selection for Combined Immunotherapy and SABR in Early-Stage NSCLC – Secondary Analysis of the I-SABR Randomized Controlled Trial},
+  title={Digital Twin Enabled Translation of Real-World Evidence into Prospective Clinical Trial Design: Insights from the Phase II BRIGHTSTAR Study in ALK-Rearranged NSCLC},
   author={},
   journal={},
   year={Year},
