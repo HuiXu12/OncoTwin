@@ -25,25 +25,25 @@ pip install git+https://github.com/WuLabMDA/OncoTwin.git
 - **Outputs**: Trained models and cross-validation results.
 
 ### 2. **Model Training**
-- **File**: `S2_BarPlot.py`  
+- **File**: `S2_XXX.py`  
 - **Description**: Visualizes feature selection frequency across models. Generates bar plots and histograms to analyze selected features.  
 - **Inputs**: Model outputs and feature metadata (`Type.xlsx`).  
 - **Outputs**: Feature selection bar plots.
 
 ### 3. **Model Calibration and Prediction**
-- **File**: `S2_BarPlot.py`  
+- **File**: `S3_XXX.py`  
 - **Description**: Visualizes feature selection frequency across models. Generates bar plots and histograms to analyze selected features.  
 - **Inputs**: Model outputs and feature metadata (`Type.xlsx`).  
 - **Outputs**: Feature selection bar plots.
 - 
 ### 4. **Risk Stratification and Individual Survival Curves Prediction**
-- **File**: `S2_BarPlot.py`  
+- **File**: `S4_XXX.py`  
 - **Description**: Visualizes feature selection frequency across models. Generates bar plots and histograms to analyze selected features.  
 - **Inputs**: Model outputs and feature metadata (`Type.xlsx`).  
 - **Outputs**: Feature selection bar plots.
 
 ### 5. **Individual Treatment Effect Estimation**
-- **File**: `S2_BarPlot.py`  
+- **File**: `S5_XXX.py`  
 - **Description**: Visualizes feature selection frequency across models. Generates bar plots and histograms to analyze selected features.  
 - **Inputs**: Model outputs and feature metadata (`Type.xlsx`).  
 - **Outputs**: Feature selection bar plots.
